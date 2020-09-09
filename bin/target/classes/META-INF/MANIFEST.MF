@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: DELL
+Build-Jdk: 11.0.8
+Implementation-Title: parallelCalls
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.marcj
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/parallelCalls
+Created-By: Maven Integration for Eclipse
+

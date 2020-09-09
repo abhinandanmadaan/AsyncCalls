@@ -2,7 +2,7 @@ package com.marcj.parallelCalls.Resources;
 
 import com.marcj.parallelCalls.Client.CountryClient;
 import com.marcj.parallelCalls.Client.Output.Country;
-import com.marcj.parallelCalls.resources.CountryResource;
+import com.marcj.parallelCalls.resources.CountryController;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -16,14 +16,14 @@ import static org.mockito.Mockito.*;
 
 public class CountryResourceTest {
     @InjectMocks
-    private CountryResource countryResource;
+    private CountryController countryResource;
 
     private CountryClient countryClient;
 
     @Before
     public void setup() {
         this.countryClient = mock(CountryClient.class);
-        this.countryResource = new CountryResource(countryClient);
+        this.countryResource = new CountryController(countryClient);
     }
 
     @Test
